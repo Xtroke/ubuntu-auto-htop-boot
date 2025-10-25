@@ -9,7 +9,7 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-read -p "Enter your Ubuntu username: " USERNAME
+read -r "Enter your Ubuntu username: " USERNAME
 
 # --- 2. Enable automatic console login ---
 echo "[INFO] Enabling auto-login for $USERNAME on tty1..."
