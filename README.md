@@ -43,3 +43,10 @@ sudo reboot
 sudo rm -r /etc/systemd/system/getty@tty1.service.d/
 sudo systemctl daemon-reload
 ```
+
+---
+
+🧑‍💻 Author
+
+Abel Jose
+📦 GitHub: https://github.com/Xtroke
