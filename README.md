@@ -25,3 +25,21 @@ cd ubuntu-auto-htop-boot
 ```bash
 chmod +x auto-htop-boot.sh
 ```
+### 3. Run it
+```bash
+sudo ./auto-htop-boot.sh
+```
+### 4. Reboot and test
+```bash
+sudo reboot
+```
+
+---
+
+## 🔧 To Disable Auto-Login
+
+### If you want to remove auto-login later:
+```bash
+sudo rm -r /etc/systemd/system/getty@tty1.service.d/
+sudo systemctl daemon-reload
+```
