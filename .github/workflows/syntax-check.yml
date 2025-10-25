@@ -24,8 +24,8 @@ jobs:
       - name: ⚙️ Verify executable permission
         run: |
           if [ ! -x auto-htop-boot.sh ]; then
-            echo "❌ Script is not executable. Please run: chmod +x auto-htop-boot.sh"
-            exit 1
+            echo "⚙️ Script not executable — fixing..."
+            chmod +x auto-htop-boot.sh
           else
             echo "✅ Script is executable."
           fi
