@@ -20,4 +20,8 @@ Perfect for home servers, Raspberry Pi, or always-on machines where you want sys
 ```bash
 git clone https://github.com/Xtroke/ubuntu-auto-htop-boot.git
 cd ubuntu-auto-htop-boot
-
+```
+### 2. Make it executable
+```bash
+chmod +x auto-htop-boot.sh
+```
