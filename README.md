@@ -18,6 +18,6 @@ Perfect for home servers, Raspberry Pi, or always-on machines where you want sys
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/ubuntu-auto-htop-boot.git
+git clone https://github.com/Xtroke/ubuntu-auto-htop-boot.git
 cd ubuntu-auto-htop-boot
 
