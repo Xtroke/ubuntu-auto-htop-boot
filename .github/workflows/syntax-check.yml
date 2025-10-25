@@ -1,0 +1,34 @@
+name: 🧩 Shell Script Lint & Permission Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  bash-lint:
+    name: Check Bash Script Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🧪 Install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: 🔍 Lint script with ShellCheck
+        run: shellcheck auto-htop-boot.sh
+
+      - name: ⚙️ Verify executable permission
+        run: |
+          if [ ! -x auto-htop-boot.sh ]; then
+            echo "❌ Script is not executable. Please run: chmod +x auto-htop-boot.sh"
+            exit 1
+          else
+            echo "✅ Script is executable."
+          fi
+
+      - name: ✅ Bash syntax check
+        run: bash -n auto-htop-boot.sh
