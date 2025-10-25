@@ -48,5 +48,5 @@ sudo systemctl daemon-reload
 
 🧑‍💻 Author
 
-Abel Jose
+Xtroke
 📦 GitHub: https://github.com/Xtroke
